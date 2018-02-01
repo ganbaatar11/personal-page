@@ -31,32 +31,35 @@
 }
 
 #console {
-  background-color: #4C5364;
+  background-color: #444444;
+  border: 1px solid #fafafa;
+  color: #fafafa;
   width: 78%;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 4px;
-  font-family: 'Roboto', sans-serif !important;
+  border-radius: 10px;
+  font-family: 'Karla', sans-serif !important;
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 
 #console .console-name {
   line-height: 40px;
+  border-bottom: 1px solid;
 }
 .console-body {
-  width: calc(100% - 180px);
+  width: 600px;
+  position: relative;
+  margin: 0 auto;
   min-height: 300px;
-  padding: 50px 90px;
-  border: 0;
+  padding: 20px 0;
   resize: none;
-  font-family: 'Monaco', 'Courier New' !important;
-  font-size: 1rem;
-  background-color: #f8f8f8;
-  color: #333;
   text-align: left;
+  
 }
 
-.console-body a {
+.console-body .link {
   color: #1e87f0 !important;
 }
 
@@ -65,7 +68,7 @@
 }
 
 .console-body .console-item-desc, .console-item-desc .console-item-desc-sub {
-  margin-left: 15px;
+  margin: 0 0 15px 15px;
 }
 
 textarea.about-json {
@@ -127,7 +130,7 @@ span.gb-icon {
     width: calc(100% - 40px);
     padding: 20px;
   }
-
+  
   .scroll-up {
     display: none;
   }
