@@ -12,6 +12,41 @@
   z-index: 1000;
 }
 
+.title-style {
+  display: block;
+  margin: 0 0 10px 0;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Roboto Condensed", Sans-Serif;
+  font-weight: 700;
+  color: #000;
+}
+p {
+  margin: 0;
+  font-size: 14.5px;
+  text-align: justify;
+}
+
+li.gb-li {
+  margin: 0 0 40px;
+}
+
+.tag {
+  text-align: center;
+  color: #fff;
+  line-height: 22px;
+  color: #1e87f0;
+  font-size: 12px;
+  background-color: #f8f8f8;
+}
+
+.uk-label {
+  text-transform: capitalize;
+  background-col/*or: #60afff;
+  color: #666;*/
+}
+
 .about-parent {
   min-height: calc(100vh - 100px);
 }
@@ -82,10 +117,10 @@ textarea.about-json {
   background-color: #f8f8f8;
 }
 
-span.gb-title {
-  border-bottom: 3px solid #1e87f0;
+.gb-title {
+  border-bottom: 1px solid #1e87f0;
   text-transform: uppercase;
-} 
+}
 
 pre {
   white-space: pre-wrap;
