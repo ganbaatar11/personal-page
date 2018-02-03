@@ -8,42 +8,36 @@
   <link rel="stylesheet" href="css/uikit.min.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.css" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Rokkitt|Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet" type="text/css"> 
-  <link href="http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic" rel="stylesheet" type="text/css">  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.js"></script>
+  <link href="http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic" rel="stylesheet" type="text/css">
   <script src="js/uikit.min.js"></script>
   <script src="js/uikit-icons.min.js"></script>
 </head>
 <body>
-  <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
-    <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
-      <div class="uk-navbar-center">
-        <a href="" class="uk-navbar-item uk-logo"><span class="gb-icon"></span></a>
-        <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true">
-          <li class="uk-active">
-            <a id="header" class="line" href="" > Ganbaatar Arslanbaatar</a>
-          </li>
-        </ul>
-      </div>
-      <div class="uk-navbar-right">
-        <a href="#offcanvas-slide" class="header uk-button uk-button-default uk-icon-link" uk-icon="icon: menu" uk-toggle></a>
-        <div id="offcanvas-slide" uk-offcanvas="flip: true;">
-          <div class="uk-offcanvas-bar">
-            <ul class="uk-nav uk-nav-mute">
-              <li><a href="#about" uk-scroll = "offset: 150;"><span class="uk-margin-small-right" uk-icon="icon: user"></span> ABOUT</a></li>
-              <li><a href="#skills" uk-scroll = "offset: 100;"><span class="uk-margin-small-right" uk-icon="icon: cog"></span> SKILLS</a></li>
-              <li><a href="#resume" uk-scroll = "offset: 100;"><span class="uk-margin-small-right" uk-icon="icon: info"></span> EXPERIENCE</a></li>
-              <li><a href="#resume" uk-scroll = "offset: 100;"><span class="uk-margin-small-right" uk-icon="icon: pencil"></span> EDUCATION</a></li>
-              <li><a href="#contact" uk-scroll = "offset: 100;"><span class="uk-margin-small-right" uk-icon="icon: receiver"></span> CONTACT</a></li>
-            </ul>
-            
-          </div>
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+  <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;" uk-scrollspy="cls: uk-animation-fade">
+    <div class="uk-navbar-center">
+      <a href="" class="uk-navbar-item uk-logo"><span class="gb-icon"></span></a>
+      <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true">
+        <li class="uk-active">
+          <a id="header" class="line" href="" > Ganbaatar Arslanbaatar</a>
+        </li>
+      </ul>
+    </div>
+    <div class="uk-navbar-right">
+      <a href="#offcanvas-slide" class="header uk-button uk-button-default uk-icon-link" uk-icon="icon: menu" uk-toggle></a>
+      <div id="offcanvas-slide" uk-offcanvas="flip: true;">
+        <div class="uk-offcanvas-bar">
+          <ul class="uk-nav uk-nav-mute">
+            <li><a href="#about" uk-scroll = "offset: 150;"><span class="uk-margin-small-right" uk-icon="icon: user"></span> ABOUT</a></li>
+            <li><a href="#skills" uk-scroll = "offset: 100;"><span class="uk-margin-small-right" uk-icon="icon: cog"></span> SKILLS</a></li>
+            <li><a href="#resume" uk-scroll = "offset: 100;"><span class="uk-margin-small-right" uk-icon="icon: info"></span> EXPERIENCE</a></li>
+            <li><a href="#resume" uk-scroll = "offset: 100;"><span class="uk-margin-small-right" uk-icon="icon: pencil"></span> EDUCATION</a></li>
+            <li><a href="#contact" uk-scroll = "offset: 100;"><span class="uk-margin-small-right" uk-icon="icon: receiver"></span> CONTACT</a></li>
+          </ul>
         </div>
       </div>
-    </nav>
-  </div>
-  
+    </div>
+  </nav>
 </div>
 <div class="uk-section uk-section-primary uk-light about-parent" id="#about">
   <div class="uk-container">
@@ -81,27 +75,46 @@
 
 <div class="uk-section" id="skills">
   <div class="uk-container" uk-scrollspy="cls: uk-animation-slide-left;">
-    <div class="uk-child-width-1-4@m" uk-grid>
-      <div>
-        <h3 class="uk-text-center"><span class="gb-title">Skills</span></h3>
+    <div uk-grid>
+      <div class="uk-width-4-4@m uk-text-center">
+        <h3 class="gb-title">Skills</h3>
       </div>
-      <div>
+      
+      <div class="uk-width-1-4@m">
         <h4>Languages</h4>
         <div>Ruby</div>
         <div>Java</div>
         <div>PHP</div>
         <div>JavaScript</div>
-        <div>TypeScript</div>
+        <!-- <div>TypeScript</div> -->
         <div>HTML </div>
         <div>CSS</div>
-        <div>SQL</div>
+        <div>SQL (MySQL & MSSQL)</div>
       </div>
-      <div>
+      <div class="uk-width-1-4@m">
         <h4>Frameworks</h4>
         <div>Ruby on Rails</div>
         <div>Laravel</div>
         <div>AngularJS</div>
         <div>Spark-Java</div>
+        <br>
+        <div>Bootstrap</div>
+        <div>Angular-material</div>
+        <div>MaterializeCSS</div>
+        <div>Foundation</div>
+        <div>UIkit</div>        
+      </div>
+      <div class="uk-width-1-4@m">
+        <h4>Tools</h4>
+        <div>AWS S3 Bucket</div>
+        <div>Gulp</div>
+        <div>Vagrant</div>
+        <div>Laravel Homestead</div>
+        <div>Redmine</div>
+        <!-- <div>Chatwork</div> -->
+        <div>Git (Gitlab & Github)</div>
+      </div>
+      <div class="uk-width-1-4@m">
         <h4>Libraries</h4>
         <div>JQuery</div>
         <div>FabricJS</div>
@@ -110,40 +123,23 @@
         <div>Capybara</div>
         <div>Selenium</div>
       </div>
-      <div>
-        <h4>Tools</h4>
-        <div>AWS S3 Bucket</div>
-        <div>Gulp</div>
-        <div>Vagrant</div>
-        <div>Laravel Homestead</div>
-        <div>Redmine</div>
-        <div>Chatwork</div>
-        <div>Git (Gitlab & Github)</div>
-        <br>
-        <div>Bootstrap</div>
-        <div>Angular-material</div>
-        <div>MaterializeCSS</div>
-        <div>Foundation</div>
-        <div>UIkit</div>
-      </div>      
     </div>
   </div>
 </div>
 
 <div class="uk-section uk-section-muted">
-  <div class="uk-container uk-card uk-card-default uk-card-body"  uk-scrollspy="cls: uk-animation-slide-right" id="resume">
+  <div class="uk-container uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right" id="resume">
     <div uk-grid>
       <div class="uk-width-3-3@m uk-text-center">
         <h2 class="">Resume</h2>
       </div>
       <div class="uk-width-2-3@m">
-        <h3 class="gb-title h3-style">Experience</h3>
+        <h3 class="gb-title">Experience</h3>
         <ul class="uk-list">
           <li uk-grid class="gb-li">
             <div class="uk-width-1-3@m">
               <p class="title-style">Unimedia <br> Solutions, LLC</p>
               <span class="tag">2015 Nov – 2017 Apr</span>
-
             </div>
             <div class="uk-width-2-3@m">
               <p class="title-style">Developer – Full stack</p>
@@ -152,7 +148,8 @@
                 - Played active role in maintaining phases including coding, testing, bug fixing, improving, source code optimizing and deploying for Ruby on rails project and contributed in developing Java sub-service. <br>
                 - Developed drawing tool as a part of the system which enables drawing shapes on the uploaded images. <br>
                 - Participated refactoring system-wide code to improve ease of maintenance. <br>
-              - Introduced best practices and developed 50% of unit tests and scenario tests for back-end. Increased performance of loading web pages by 30% using Rails pipeline. </p>
+                - Introduced best practices and developed 50% of unit tests and scenario tests for back-end. Increased performance of loading web pages by 30% using Rails pipeline. 
+              </p>
               <div class="job-technologies">
                 <span class="uk-label uk-margin-small-right">Ruby on Rails</span>
                 <span class="uk-label uk-margin-small-right">AngularJS</span>
@@ -169,100 +166,98 @@
                 <span class="uk-label uk-margin-small-right">HTML5 Canvas</span>
                 <span class="uk-label uk-margin-small-right">Redmine</span>
               </div>
-
-            </li>
-            <li uk-grid class="gb-li">
-              <div class="uk-width-1-3@m">
-                <p class="title-style">Unitel, Group</p>
-                <span class="tag">2015 Feb – 2015 Oct</span>
-              </div>
-              <div class="uk-width-2-3@m">
-                <p class="title-style">IPTV System Developer</p>
-                <p>Company offers mobile and fixed-line telecommunications, broadband Internet, and streaming services. <br>
-                  - Contributed in developing dedicated hotel application which shows places to visit, weather forecast and foreign exchange rates. <br>- Created admin panel and currency exchange rate board<br>
-                  - Created responsive web template with 40+ pages from the given design for customer loyalty system. <a href="https://www.my-gg.mn" target="blank">my-gg.mn</a><br>
-                  - Contributed in developing dashboard for video content providers
-                </p>
-                <div class="job-technologies">
-                  <span class="uk-label uk-margin-small-right">Java</span>
-                  <span class="uk-label uk-margin-small-right">PHP</span>
-                  <span class="uk-label uk-margin-small-right">Symfony</span>
-                  <span class="uk-label uk-margin-small-right">JSP</span>
-                  <span class="uk-label uk-margin-small-right">Servlet</span>
-                  <span class="uk-label uk-margin-small-right">SVN</span>
-                  <span class="uk-label uk-margin-small-right">Oracle DB</span>
-                  <span class="uk-label uk-margin-small-right">MaterializeCSS</span>
-                  <span class="uk-label uk-margin-small-right">Bootstrap </span>
-                  <span class="uk-label uk-margin-small-right">JQuery</span>
-                </div>
-              </div>
-            </li>
-          </ul>        
-        </div>
-        <div class="uk-width-1-3@m">
-          <h3 class="gb-title h3-style">Education</h3>
-          <ul class="uk-list">
-            <li class="gb-li">
-              <p>
-                <span class="title-style">Master of Computer Science</span>
-                <span class="tag">2017 Apr – Present</span> <br>
-                Maharishi University of Management <br>
-                Fairfield, Iowa, US
+            </div>
+          </li>
+          <li uk-grid class="gb-li">
+            <div class="uk-width-1-3@m">
+              <p class="title-style">Unitel, Group</p>
+              <span class="tag">2015 Feb – 2015 Oct</span>
+            </div>
+            <div class="uk-width-2-3@m">
+              <p class="title-style">IPTV System Developer</p>
+              <p>Company offers mobile and fixed-line telecommunications, broadband Internet, and streaming services. <br>
+                - Contributed in developing dedicated hotel application which shows places to visit, weather forecast and foreign exchange rates. <br>- Created admin panel and currency exchange rate board<br>
+                - Created responsive web template with 40+ pages from the given design for customer loyalty system. <a href="https://www.my-gg.mn" target="blank">my-gg.mn</a><br>
+                - Contributed in developing dashboard for video content providers
               </p>
-            </li>
-            <li class="gb-li">
-              <p>
-                <span class="title-style">Bachelor of Software Engineer</span>
-                <span class="tag">2011 Aug - 2015 Jan</span> <br>
-                Mongolian University of Science and Technology <br>
-                Ulaanbaatar, Mongolia
-              </p>
-            </li>
-          </ul> 
-        </div>
+              <div class="job-technologies">
+                <span class="uk-label uk-margin-small-right">Java</span>
+                <span class="uk-label uk-margin-small-right">PHP</span>
+                <span class="uk-label uk-margin-small-right">Symfony</span>
+                <span class="uk-label uk-margin-small-right">JSP</span>
+                <span class="uk-label uk-margin-small-right">Servlet</span>
+                <span class="uk-label uk-margin-small-right">SVN</span>
+                <span class="uk-label uk-margin-small-right">Oracle DB</span>
+                <span class="uk-label uk-margin-small-right">MaterializeCSS</span>
+                <span class="uk-label uk-margin-small-right">Bootstrap </span>
+                <span class="uk-label uk-margin-small-right">JQuery</span>
+              </div>
+            </div>
+          </li>
+        </ul>        
+      </div>
+      <div class="uk-width-1-3@m">
+        <h3 class="gb-title">Education</h3>
+        <ul class="uk-list">
+          <li class="gb-li">
+            <p>
+              <span class="title-style">Master of Computer Science</span>
+              <span class="tag">2017 Apr – Present</span> <br>
+              Maharishi University of Management <br>
+              Fairfield, Iowa, US
+            </p>
+          </li>
+          <li class="gb-li">
+            <p>
+              <span class="title-style">Bachelor of Software Engineer</span>
+              <span class="tag">2011 Aug - 2015 Jan</span> <br>
+              Mongolian University of Science and Technology <br>
+              Ulaanbaatar, Mongolia
+            </p>
+          </li>
+        </ul> 
       </div>
     </div>
   </div>
-  <div class="uk-section uk-section-primary uk-light footer" id="contact">
-    <div class="uk-container">
-      <div uk-grid>
-        <div class="uk-width-expand@m" uk-scrollspy="cls: uk-animation-slide-left">
-          <form>
+</div>
 
-            <h3>
-              <span class="gb-title uk-margin-small-right">drop me a line</span>
-              <span class="uk-icon" uk-icon="icon: comments"></span>
-            </h3>
+<div class="uk-section uk-section-primary uk-light uk-text-center">
+  <a class="uk-button uk-button-default" href="./resume/ganbaatar.doc" target="blank">Download Resume</a>
+</div>
 
-            <div class="uk-margin">
-              <input class="uk-input" type="text" name="name" placeholder="Name" required>
-            </div>
-
-            <div class="uk-margin">
-              <input class="uk-input" type="email" name="email" placeholder="Email" required>
-            </div>
-
-            <div class="uk-margin">
-              <textarea class="uk-textarea" rows="5" placeholder="Message" required></textarea>
-            </div>
-
-            <div class="uk-margin">
-              <button class="uk-button uk-button-default" type="submit">Submit</button>
-            </div>
-          </form>
-        </div>
-        <div class="uk-width-1-3@m" uk-scrollspy="cls: uk-animation-slide-right">
+<div class="uk-section uk-section-primary uk-light footer" id="contact">
+  <div class="uk-container">
+    <div uk-grid class="uk-grid-divider uk-flex-center" uk-scrollspy="cls: uk-animation-slide-right">
+      <!-- <div class="uk-width-1-3@m" uk-scrollspy="cls: uk-animation-slide-left"> -->
+        <!-- <form>
+          
           <h3>
-            <span class="gb-title uk-margin-small-right">Get in touch</span>
-            <span class="uk-icon" uk-icon="icon: social"></span>
+            <span class="gb-title uk-margin-small-right">drop me a line</span>
+            <span class="uk-icon" uk-icon="icon: comments"></span>
           </h3>
-          <a href="https://www.facebook.com/gb.ganbaatar" target="_blank" class="uk-icon-button  uk-margin-small-right" uk-icon="icon: facebook; ratio: 1"></a>
-          <a href="https://github.com/ganbaatar11" target="_blank" class="uk-icon-button uk-margin-small-right" uk-icon="icon: github"></a>
-          <a href="https://www.linkedin.com/in/ganbaatar-arslanbaatar/" target="_blank" class="uk-icon-button" uk-icon="icon: linkedin"></a>
-          <hr>
+          
+          <div class="uk-margin">
+            <input class="uk-input" type="text" name="name" placeholder="Name" required>
+          </div>
+          
+          <div class="uk-margin">
+            <input class="uk-input" type="email" name="email" placeholder="Email" required>
+          </div>
+          
+          <div class="uk-margin">
+            <textarea class="uk-textarea" rows="5" placeholder="Message" required></textarea>
+          </div>
+          
+          <div class="uk-margin">
+            <button class="uk-button uk-button-default" type="submit">Submit</button>
+          </div>
+        </form> -->
+        
+        <!-- </div> -->
+        <div class="uk-width-1-3@m">
           <ul class="uk-list uk-link-text">
             <li>
-              <span class="uk-icon" uk-icon="icon: location"></span><span class="uk-margin-small-left">Niles, Illinois, USA</span>
+              <span class="uk-icon" uk-icon="icon: location"></span><span class="uk-margin-small-left">Chicago Area, Illinois, USA</span>
             </li>
             <li>
               <span class="uk-icon" uk-icon="icon: phone"></span><span class="uk-margin-small-left">+1 (312) 439-3507</span>
@@ -274,6 +269,15 @@
               <span class="uk-icon" uk-icon="icon: world"></span><a href="#" class="uk-margin-small-left">ganbaatar.com</a>
             </li>
           </ul>
+        </div>
+        <div class="uk-width-1-3@m">
+          <h3>
+            <span class="gb-title uk-margin-small-right">Get in touch</span>
+            <span class="uk-icon" uk-icon="icon: social"></span>
+          </h3>
+          <a href="https://www.facebook.com/gb.ganbaatar" target="_blank" class="uk-icon-button  uk-margin-small-right" uk-icon="icon: facebook; ratio: 1"></a>
+          <a href="https://github.com/ganbaatar11" target="_blank" class="uk-icon-button uk-margin-small-right" uk-icon="icon: github"></a>
+          <a href="https://www.linkedin.com/in/ganbaatar-arslanbaatar/" target="_blank" class="uk-icon-button" uk-icon="icon: linkedin"></a>
         </div>       
       </div>
     </div>

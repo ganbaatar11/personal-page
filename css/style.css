@@ -122,6 +122,14 @@ textarea.about-json {
   text-transform: uppercase;
 }
 
+.skype-chat {
+  display: inline-block;
+}
+
+.skype-chat img {
+  margin: 0 !important;
+}
+
 pre {
   white-space: pre-wrap;
   white-space: -moz-pre-wrap;
